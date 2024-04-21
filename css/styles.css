@@ -274,7 +274,8 @@ footer .redes a {
   font-size: 50px;
   letter-spacing: 20px;
 }
-footer .subir {
+
+.subir {
   width: 40px;
   height: 40px;
   text-decoration: none;
@@ -288,10 +289,10 @@ footer .subir {
   border-radius: 50%;
   box-shadow: 0 0 5px 5px #222831;
 }
-footer .subir:hover {
+.subir:hover {
   color: #f7e36f;
 }
-footer .subir:active {
+.subir:active {
   color: #fbd46d;
   box-shadow: 0 0 10px 10px #fbd46d;
 }

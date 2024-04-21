@@ -313,28 +313,31 @@ footer {
         font-size: 50px;
         letter-spacing: 20px;
     }
+}
 
-    .subir {
-        width: 40px;
-        height: 40px;
-        text-decoration: none;
-        color: $footer-text-color;
-        background-color: $scroll-btn-bg-color;
-        position: fixed;
-        bottom: 40px;
-        right: 40px;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        box-shadow: 0 0 5px 5px $scroll-btn-bg-color;
 
-        &:hover {
-            color: $scroll-btn-hover-color;
-        }
+// button up 
 
-        &:active {
-            color: $scroll-btn-active-color;
-            box-shadow: 0 0 10px 10px $scroll-btn-active-color;
-        }
+.subir {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: $footer-text-color;
+    background-color: $scroll-btn-bg-color;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px $scroll-btn-bg-color;
+
+    &:hover {
+        color: $scroll-btn-hover-color;
+    }
+
+    &:active {
+        color: $scroll-btn-active-color;
+        box-shadow: 0 0 10px 10px $scroll-btn-active-color;
     }
 }
