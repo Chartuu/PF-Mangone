@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+// variables fuentes
+
+$fuente1: "Montserrat", sans-serif;
+$fuente2: "Lora", serif;
+$fuente3: "Caveat", cursive;
+
+// Variables color
+$main-color: #4f8a8b;
+$accent-color: #fbd46d;
+$text-color: #222831;
+$nav-border-color: #3a6566;
+$btn-bg-color: #3a6566;
+$btn-text-color: #fbd46d;
+$form-bg-color: #fbd46d;
+$footer-bg-color: #4f8a8b;
+$footer-text-color: #eeeeee;
+$footer-border-color: #1f2a2b;
+$scroll-btn-bg-color: #222831;
+$scroll-btn-hover-color: #f7e36f;
+$scroll-btn-active-color: #fbd46d;
+$gradient-light-color: #57e04b94;
+$bg-active-color: rgba(232, 233, 161, 0.747);
+// Variables para la animación de fondo
+$fruit-size: 100%;
+$animation-duration: 20s;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "lora", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Config Nav Bar
+header {
+    height: 90px;
+    font-size: 15px;
+    text-shadow: 1px  1px rgba(255, 255, 255, 0);
+    word-spacing: 10px;
+    border-bottom: 2px solid;
+    border-color: #3a6566;
+    position: static;
+}
+
+
+.header-image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.navbar-custom {
+    background-image: linear-gradient(to right, $main-color, $gradient-light-color);
+    padding: 10px 0;
+    animation: gradientAnimation 10s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.navbar-brand {
+    float: left;
+    font-family: "caveat", cursive;
+    font-size: 35px;
+    color: $accent-color;
+    padding: 10px;
+}
+
+.navbar-custom,
+.navbar-custom .navbar-nav .nav-link {
+    color: $text-color;
+    padding: 15px;
+    margin: 3px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-custom,
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: $nav-border-color;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navbar-custom,
+.navbar-custom .navbar-nav .nav-link.active {
+    color: $text-color;
+    background-color: $bg-active-color;
+    box-shadow: 0 0 10px rgba(232, 233, 161, 4);
+}
+
+// Home
+.main {
+    min-height: calc(100vh - 70px - 100px);
+    background-size: cover;
+    padding: 30px;
+    overflow: auto;
+}
+
+.homeContent {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.HomeTitle {
+    background-color: $main-color;
+    border-radius: 20px;
+    margin-top: 20%;
+}
+
+.HomeTitle span {
+    color: $accent-color;
+}
+
+.moreInfo {
+    display: inline-flex;
+}
+
+.InfoBtn {
+    background-color: $btn-bg-color;
+    color: $text-color;
+    border: $btn-bg-color;
+    border-radius: 5px;
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.InfoBtn:hover {
+    color: $accent-color;
+}
+
+// About Us
+.MainAbUs {
+    padding: 30px;
+    min-height: calc(100vh - 70px - 100px);
+    width: 100%;
+    background-size: cover;
+    background-color: $main-color;
+    align-items: center;
+}
+
+.containerimage {
+    margin-top: 25px;
+    border-radius: 50%;
+}
+
+.containerbg {
+    background-color: $accent-color;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.containerbg h2 {
+    color: $nav-border-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+// Clients
+.ClientsMain {
+    min-height: calc(100vh - 70px - 100px);
+    background-size: cover;
+    background-color: $main-color;
+    align-items: center;
+    overflow: auto;
+    padding: 20px;
+}
+
+.UserHistory {
+    background-color: $accent-color;
+    align-items: center;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.imageUser {
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    margin: 15px;
+}
+
+.UserName {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.UserText {
+    padding-top: 45px;
+    margin-left: 15px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+// Contact
+.MainContacts {
+    min-height: calc(100vh - 70px - 100px);
+    background-image: url(../assets/berries-2277_1280.jpg);
+    animation: fruitAnimation $animation-duration linear infinite;
+    background-size: cover;
+    background-color: $main-color;
+    overflow: hidden;
+    background-repeat: repeat;
+}
+
+.Title h2 {
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 60px;
+    font-family: "caveat", cursive !important;
+    background-color: $accent-color;
+    padding: 30px;
+    font-size: 60px;
+}
+
+form {
+    background-color: $form-bg-color;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.enviar {
+    margin-top: 10px;
+}
+
+.enviar .btn {
+    color: $btn-text-color;
+    background-color: $btn-bg-color;
+    font-size: 20px;
+}
+
+// Services
+.ServicesMain {
+    min-height: calc(100vh - 70px - 100px);
+    background-size: cover;
+    // background-color: $main-color;
+    align-items: center;
+    overflow: auto;
+    padding: 20px;
+}
+
+
+.ServiceX {
+    background-color: $accent-color;
+    align-items: center;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 20px;
+    height: 500px;
+    max-height: 900px;
+    overflow: auto;
+}
+
+.imageServ {
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    margin: 15px;
+}
+
+.ServName {
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.ServText {
+    padding-top: 45px;
+    margin-left: 15px;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+
+// background 
+main{
+    background-color: $main-color;
+    // overflow: auto; 
+    overflow: auto !important;
+    animation: fruitAnimation $animation-duration linear infinite; 
+    background-image:  url('../assets/lemons-pattern.png');
+    background-size: $fruit-size;
+    background-repeat: infinite;
+}
+
+@keyframes fruitAnimation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+// Footer
+footer {
+
+    background-color: $footer-bg-color;
+    color: $footer-text-color;
+    text-align: center;
+    padding: 30px;
+    font-size: 25px;
+    border-top: 2px solid;
+    border-color: $footer-border-color;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 20px;
+
+}
+
+footer .redes a {
+    color: $footer-text-color;
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+
+.subir {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: $footer-text-color;
+    background-color: $scroll-btn-bg-color;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px $scroll-btn-bg-color;
+}
+
+.subir:hover {
+    color: $scroll-btn-hover-color;
+}
+
+.subir:active {
+    color: $scroll-btn-active-color;
+    box-shadow: 0 0 10px 10px $scroll-btn-active-color;
+}
