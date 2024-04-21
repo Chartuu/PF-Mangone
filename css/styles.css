@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+.boton-base, .InfoBtn {
+  background-color: #3a6566;
+  color: #222831;
+  border: #3a6566;
+  border-radius: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -80,9 +93,14 @@ header {
 
 .main {
   min-height: calc(100vh - 70px - 100px);
-  background-size: cover;
   padding: 30px;
-  overflow: auto;
+  align-items: center;
+  background-color: #4f8a8b;
+  overflow: auto !important;
+  animation: fruitAnimation 20s linear infinite;
+  background-image: url("../assets/lemons-pattern.png");
+  background-size: 100%;
+  background-repeat: infinite;
 }
 
 .homeContent {
@@ -91,7 +109,7 @@ header {
 }
 
 .HomeTitle {
-  background-color: #4f8a8b;
+  background-color: rgba(79, 138, 139, 0.9058823529);
   border-radius: 20px;
   margin-top: 20%;
 }
@@ -105,15 +123,7 @@ header {
 }
 
 .InfoBtn {
-  background-color: #3a6566;
-  color: #222831;
-  border: #3a6566;
-  border-radius: 5px;
-  margin-left: 15px;
   text-decoration: none;
-  padding: 15px;
-  font-size: 20px;
-  font-weight: bold;
 }
 
 .InfoBtn:hover {
@@ -121,12 +131,15 @@ header {
 }
 
 .MainAbUs {
-  padding: 30px;
   min-height: calc(100vh - 70px - 100px);
-  width: 100%;
-  background-size: cover;
-  background-color: #4f8a8b;
+  padding: 30px;
   align-items: center;
+  background-color: #4f8a8b;
+  overflow: auto !important;
+  animation: fruitAnimation 20s linear infinite;
+  background-image: url("../assets/lemons-pattern.png");
+  background-size: 100%;
+  background-repeat: infinite;
 }
 
 .containerimage {
@@ -152,11 +165,14 @@ header {
 
 .ClientsMain {
   min-height: calc(100vh - 70px - 100px);
-  background-size: cover;
-  background-color: #4f8a8b;
+  padding: 30px;
   align-items: center;
-  overflow: auto;
-  padding: 20px;
+  background-color: #4f8a8b;
+  overflow: auto !important;
+  animation: fruitAnimation 20s linear infinite;
+  background-image: url("../assets/lemons-pattern.png");
+  background-size: 100%;
+  background-repeat: infinite;
 }
 
 .UserHistory {
@@ -190,12 +206,14 @@ header {
 
 .MainContacts {
   min-height: calc(100vh - 70px - 100px);
-  background-image: url(../assets/berries-2277_1280.jpg);
-  animation: fruitAnimation 20s linear infinite;
-  background-size: cover;
+  padding: 30px;
+  align-items: center;
   background-color: #4f8a8b;
-  overflow: hidden;
-  background-repeat: repeat;
+  overflow: auto !important;
+  animation: fruitAnimation 20s linear infinite;
+  background-image: url("../assets/lemons-pattern.png");
+  background-size: 100%;
+  background-repeat: infinite;
 }
 
 .Title h2 {
@@ -229,10 +247,14 @@ form {
 
 .ServicesMain {
   min-height: calc(100vh - 70px - 100px);
-  background-size: cover;
+  padding: 30px;
   align-items: center;
-  overflow: auto;
-  padding: 20px;
+  background-color: #4f8a8b;
+  overflow: auto !important;
+  animation: fruitAnimation 20s linear infinite;
+  background-image: url("../assets/lemons-pattern.png");
+  background-size: 100%;
+  background-repeat: infinite;
 }
 
 .ServiceX {
